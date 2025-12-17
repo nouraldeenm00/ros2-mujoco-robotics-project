@@ -1,0 +1,4 @@
+[console_scripts]
+forward_kinematics_node = robot_arm_kinematics.forward_kinematics_node:main
+inverse_kinematics_node = robot_arm_kinematics.inverse_kinematics_node:main
+trajectory_planner_node = robot_arm_kinematics.trajectory_planner_node:main

@@ -1,0 +1,28 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description
+-- Install configuration: ""
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/urdf
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/urdf/robot_arm.urdf.xacro
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/meshes
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/launch
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/launch/display.launch.py
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/rviz
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/rviz/display.rviz
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/config
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/ament_index/resource_index/package_run_dependencies/robot_arm_description
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/ament_index/resource_index/parent_prefix_path/robot_arm_description
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/ament_prefix_path.sh
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/ament_prefix_path.dsv
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/path.sh
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/path.dsv
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.bash
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.sh
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.zsh
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.dsv
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/package.dsv
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/ament_index/resource_index/packages/robot_arm_description
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/cmake/robot_arm_descriptionConfig.cmake
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/cmake/robot_arm_descriptionConfig-version.cmake
+-- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/package.xml

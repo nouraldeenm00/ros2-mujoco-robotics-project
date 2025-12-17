@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot_arm">
+
+  <!-- Constants for robot dimensions -->
+  <xacro:property name="PI" value="3.1415926535897931"/>
+  
+  <!-- Base dimensions -->
+  <xacro:property name="base_height" value="0.05"/>
+  <xacro:property name="base_radius" value="0.1"/>
+  
+  <!-- Link 1 dimensions -->
+  <xacro:property name="link1_length" value="0.3"/>
+  <xacro:property name="link1_radius" value="0.04"/>
+  
+  <!-- Link 2 dimensions -->
+  <xacro:property name="link2_length" value="0.25"/>
+  <xacro:property name="link2_radius" value="0.035"/>
+  
+  <!-- Link 3 dimensions -->
+  <xacro:property name="link3_length" value="0.2"/>
+  <xacro:property name="link3_radius" value="0.03"/>
+  
+  <!-- End effector dimensions -->
+  <xacro:property name="ee_length" value="0.1"/>
+  <xacro:property name="ee_radius" value="0.025"/>
+
+  <!-- Material colors -->
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+  
+  <material name="gray">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  
+  <material name="orange">
+    <color rgba="1 0.5 0 1"/>
+  </material>
+  
+  <material name="red">
+    <color rgba="0.8 0 0 1"/>
+  </material>
+
+  <!-- World link (fixed reference frame) -->
+  <link name="world"/>
+
+  <!-- Base link -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${base_radius}" length="${base_height}"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${base_radius}" length="${base_height}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 ${base_height/2}" rpy="0 0 0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <!-- Joint connecting world to base -->
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Link 1 -->
+  <link name="link1">
+    <visual>
+      <origin xyz="0 0 ${link1_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${link1_radius}" length="${link1_length}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${link1_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${link1_radius}" length="${link1_length}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <origin xyz="0 0 ${link1_length/2}" rpy="0 0 0"/>
+      <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <!-- Joint 1 (Base rotation - revolute around Z axis) -->
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0 0 ${base_height}" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="${-PI}" upper="${PI}" effort="10.0" velocity="1.0"/>
+  </joint>
+
+  <!-- Link 2 -->
+  <link name="link2">
+    <visual>
+      <origin xyz="0 0 ${link2_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${link2_radius}" length="${link2_length}"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${link2_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${link2_radius}" length="${link2_length}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.4"/>
+      <origin xyz="0 0 ${link2_length/2}" rpy="0 0 0"/>
+      <inertia ixx="0.004" ixy="0.0" ixz="0.0" iyy="0.004" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <!-- Joint 2 (Shoulder - revolute around Y axis) -->
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 ${link1_length}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="${-PI/2}" upper="${PI/2}" effort="10.0" velocity="1.0"/>
+  </joint>
+
+  <!-- Link 3 -->
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 ${link3_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${link3_radius}" length="${link3_length}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${link3_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${link3_radius}" length="${link3_length}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.3"/>
+      <origin xyz="0 0 ${link3_length/2}" rpy="0 0 0"/>
+      <inertia ixx="0.003" ixy="0.0" ixz="0.0" iyy="0.003" iyz="0.0" izz="0.0005"/>
+    </inertial>
+  </link>
+
+  <!-- Joint 3 (Elbow - revolute around Y axis) -->
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0 0 ${link2_length}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="${-PI/2}" upper="${PI/2}" effort="10.0" velocity="1.0"/>
+  </joint>
+
+  <!-- End effector link -->
+  <link name="end_effector">
+    <visual>
+      <origin xyz="0 0 ${ee_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${ee_radius}" length="${ee_length}"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${ee_length/2}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${ee_radius}" length="${ee_length}"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.2"/>
+      <origin xyz="0 0 ${ee_length/2}" rpy="0 0 0"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0002"/>
+    </inertial>
+  </link>
+
+  <!-- Joint 4 (Wrist rotation - revolute around Z axis) -->
+  <joint name="joint4" type="revolute">
+    <parent link="link3"/>
+    <child link="end_effector"/>
+    <origin xyz="0 0 ${link3_length}" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="${-PI}" upper="${PI}" effort="5.0" velocity="1.0"/>
+  </joint>
+
+</robot>

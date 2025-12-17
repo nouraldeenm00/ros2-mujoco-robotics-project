@@ -1,0 +1,23 @@
+[7.395s] Invoking command in '/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/src/robot_arm_kinematics': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm_kinematics build --build-base /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/build install --record /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/install.log --single-version-externally-managed install_data
+[8.345s] running egg_info
+[8.425s] writing ../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info/PKG-INFO
+[8.426s] writing dependency_links to ../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info/dependency_links.txt
+[8.427s] writing entry points to ../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info/entry_points.txt
+[8.427s] writing requirements to ../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info/requires.txt
+[8.428s] writing top-level names to ../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info/top_level.txt
+[8.581s] reading manifest file '../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info/SOURCES.txt'
+[8.605s] writing manifest file '../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info/SOURCES.txt'
+[8.605s] running build
+[8.605s] running build_py
+[8.607s] running install
+[8.629s] running install_lib
+[8.711s] running install_data
+[8.711s] running install_egg_info
+[8.794s] removing '/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/python3.12/site-packages/robot_arm_kinematics-0.0.1-py3.12.egg-info' (and everything under it)
+[8.795s] Copying ../../build/robot_arm_kinematics/robot_arm_kinematics.egg-info to /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/python3.12/site-packages/robot_arm_kinematics-0.0.1-py3.12.egg-info
+[8.806s] running install_scripts
+[9.293s] Installing forward_kinematics_node script to /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/robot_arm_kinematics
+[9.294s] Installing inverse_kinematics_node script to /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/robot_arm_kinematics
+[9.294s] Installing trajectory_planner_node script to /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/robot_arm_kinematics
+[9.295s] writing list of installed files to '/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/install.log'
+[9.387s] Invoked command in '/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/src/robot_arm_kinematics' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm_kinematics build --build-base /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/build install --record /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/install.log --single-version-externally-managed install_data

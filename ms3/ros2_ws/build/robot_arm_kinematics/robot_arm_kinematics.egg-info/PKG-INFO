@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: robot-arm-kinematics
+Version: 0.0.1
+Summary: Kinematics solver and controller for 4-DOF robot arm
+Maintainer: nouraldeenm00
+Maintainer-email: nouraldeenm00@gmail.com
+License: MIT

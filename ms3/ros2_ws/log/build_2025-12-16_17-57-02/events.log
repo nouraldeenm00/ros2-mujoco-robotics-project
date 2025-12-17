@@ -1,0 +1,38 @@
+[0.000000] (-) TimerEvent: {}
+[0.000701] (robot_arm_kinematics) JobQueued: {'identifier': 'robot_arm_kinematics', 'dependencies': OrderedDict()}
+[0.000850] (robot_arm_kinematics) JobStarted: {'identifier': 'robot_arm_kinematics'}
+[0.098304] (-) TimerEvent: {}
+[0.198861] (-) TimerEvent: {}
+[0.299401] (-) TimerEvent: {}
+[0.399921] (-) TimerEvent: {}
+[0.500438] (-) TimerEvent: {}
+[0.600873] (-) TimerEvent: {}
+[0.701350] (-) TimerEvent: {}
+[0.801748] (-) TimerEvent: {}
+[0.902288] (-) TimerEvent: {}
+[1.002990] (-) TimerEvent: {}
+[1.103739] (-) TimerEvent: {}
+[1.204295] (-) TimerEvent: {}
+[1.304734] (-) TimerEvent: {}
+[1.405392] (-) TimerEvent: {}
+[1.505824] (-) TimerEvent: {}
+[1.606314] (-) TimerEvent: {}
+[1.706756] (-) TimerEvent: {}
+[1.807155] (-) TimerEvent: {}
+[1.907599] (-) TimerEvent: {}
+[2.008322] (-) TimerEvent: {}
+[2.108725] (-) TimerEvent: {}
+[2.209254] (-) TimerEvent: {}
+[2.309668] (-) TimerEvent: {}
+[2.410071] (-) TimerEvent: {}
+[2.510628] (-) TimerEvent: {}
+[2.611161] (-) TimerEvent: {}
+[2.711605] (-) TimerEvent: {}
+[2.812207] (-) TimerEvent: {}
+[2.912730] (-) TimerEvent: {}
+[3.013325] (-) TimerEvent: {}
+[3.113946] (-) TimerEvent: {}
+[3.214436] (-) TimerEvent: {}
+[3.232939] (robot_arm_kinematics) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute\n    loop.run_until_complete(future)\n  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete\n    self.run_forever()\n  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever\n    self._run_once()\n  File "/usr/lib/python3.12/asyncio/base_events.py", line 1949, in _run_once\n    event_list = self._selector.select(timeout)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/selectors.py", line 468, in select\n    fd_event_list = self._selector.poll(timeout, max_ev)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyboardInterrupt\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build\n    return await extension.build(additional_hooks=additional_hooks)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 96, in build\n    available_commands = await self._get_available_commands(\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 194, in _get_available_commands\n    output = await check_output(\n             ^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\n           ^^^^^^\nAssertionError: Expected [\'/usr/bin/python3\', \'-W\', \'ignore:setup.py install is deprecated\', \'-W\', \'ignore:easy_install command is deprecated\', \'setup.py\', \'--help-commands\'] to pass: Traceback (most recent call last):\n  File "/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/src/robot_arm_kinematics/setup.py", line 7, in <module>\n    setup(\n  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup\n    return distutils.core.setup(**attrs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 172, in setup\n    ok = dist.parse_command_line()\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 472, in parse_command_line\n    if self.handle_display_options(option_order):\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 1209, in handle_display_options\n    return _Distribution.handle_display_options(self, option_order)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 686, in handle_display_options\n    self.print_commands()\n  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 990, in print_commands\n    return _Distribution.print_commands(self)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 755, in print_commands\n    self.print_command_list(std_commands, "Standard commands", max_length)\n  File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 722, in print_command_list\n    klass = self.get_command_class(cmd)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 978, in get_command_class\n    eps = metadata.entry_points(group=\'distutils.commands\', name=command)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 913, in entry_points\n    return EntryPoints(eps).select(**params)\n           ^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 911, in <genexpr>\n    dist.entry_points for dist in _unique(distributions())\n    ^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 471, in entry_points\n    return EntryPoints._from_text_for(self.read_text(\'entry_points.txt\'), self)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 312, in _from_text_for\n    return cls(ep._for(dist) for ep in cls._from_text(text))\n                                       ^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 318, in _from_text\n    for item in Sectioned.section_pairs(text or \'\')\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 101, in section_pairs\n    @classmethod\n\nKeyboardInterrupt\n\n'}
+[3.234818] (robot_arm_kinematics) JobEnded: {'identifier': 'robot_arm_kinematics', 'rc': 'SIGINT'}
+[3.244318] (-) EventReactorShutdown: {}

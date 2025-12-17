@@ -1,0 +1,19 @@
+[3.001s] Invoking command in '/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics': PYTHONPATH=/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/build --no-deps symlink_data
+[4.106s] running develop
+[4.823s] running egg_info
+[4.889s] writing robot_arm_kinematics.egg-info/PKG-INFO
+[4.890s] writing dependency_links to robot_arm_kinematics.egg-info/dependency_links.txt
+[4.891s] writing entry points to robot_arm_kinematics.egg-info/entry_points.txt
+[4.891s] writing requirements to robot_arm_kinematics.egg-info/requires.txt
+[4.892s] writing top-level names to robot_arm_kinematics.egg-info/top_level.txt
+[5.031s] reading manifest file 'robot_arm_kinematics.egg-info/SOURCES.txt'
+[5.033s] writing manifest file 'robot_arm_kinematics.egg-info/SOURCES.txt'
+[5.107s] running build_ext
+[5.107s] Creating /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/python3.12/site-packages/robot-arm-kinematics.egg-link (link to .)
+[5.109s] Installing forward_kinematics_node script to /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/robot_arm_kinematics
+[5.110s] Installing inverse_kinematics_node script to /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/robot_arm_kinematics
+[5.110s] Installing trajectory_planner_node script to /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/robot_arm_kinematics
+[5.111s] 
+[5.111s] Installed /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics
+[5.111s] running symlink_data
+[5.214s] Invoked command in '/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics' returned '0': PYTHONPATH=/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/install/robot_arm_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nour/ros2-mujoco-robotics-project/ms3/ros2_ws/build/robot_arm_kinematics/build --no-deps symlink_data
