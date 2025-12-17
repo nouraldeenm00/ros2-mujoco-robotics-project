@@ -1,0 +1,30 @@
+[0.064s] Invoking command in '/home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description -- -j12 -l12
+[0.298s] Invoked command in '/home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description -- -j12 -l12
+[0.364s] Invoking command in '/home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description
+[0.409s] -- Install configuration: "Release"
+[0.410s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/urdf
+[0.410s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/urdf/robot_arm.urdf.xacro
+[0.410s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/meshes
+[0.411s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/launch
+[0.426s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/launch/display.launch.py
+[0.427s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/launch/motion.launch.py
+[0.428s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/rviz
+[0.429s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/rviz/display.rviz
+[0.432s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/rviz/motion.rviz
+[0.434s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/config
+[0.435s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/ament_index/resource_index/package_run_dependencies/robot_arm_description
+[0.445s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/ament_index/resource_index/parent_prefix_path/robot_arm_description
+[0.446s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/ament_prefix_path.sh
+[0.447s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/ament_prefix_path.dsv
+[0.447s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/path.sh
+[0.453s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/environment/path.dsv
+[0.454s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.bash
+[0.455s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.sh
+[0.456s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.zsh
+[0.456s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/local_setup.dsv
+[0.457s] -- Installing: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/package.dsv
+[0.458s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/ament_index/resource_index/packages/robot_arm_description
+[0.458s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/cmake/robot_arm_descriptionConfig.cmake
+[0.463s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/cmake/robot_arm_descriptionConfig-version.cmake
+[0.464s] -- Up-to-date: /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/install/robot_arm_description/share/robot_arm_description/package.xml
+[0.466s] Invoked command in '/home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/nour/ros2-mujoco-robotics-project/ms2/ros2_ws/build/robot_arm_description

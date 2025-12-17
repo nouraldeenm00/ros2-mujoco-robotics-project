@@ -1,0 +1,300 @@
+German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+List of Contents:
+Overview: 2
+Objectives: 3
+Project Regulations: 4
+Project Milestones Overview: 5
+Project Milestones Requirements: 6
+Project Remarks and Resources: 10
+1German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Overview:
+The main objective of the Robotics Programming (MCTR911) course is to go through the
+robotic systems challenges. One of these challenges is to derive the robotic systems
+equations of motion through modeling of the robotic manipulators using both kinematic
+and dynamic approaches. Another challenge is to obtain the desired trajectory for either
+the manipulator’s end effector or its joints to be followed by the manipulator to reach its
+destination. And finally, to control the robot’s motion to follow the designated trajectory
+to close the loop of the whole system.
+All these challenges are going to be highlighted and tackled in the course project, as
+students will learn how to model a robotic system and how to control its motion to
+perform the desired task successfully and efficiently. Students will also have the chance
+to visualize the motion of your created robot and build an interactive GUI with a full
+environment for the robot in an industrial application through the use of ROS2 and
+MuJoCo connecting coded by Python or other simulator of your choice (teams that
+choose to use other simulators are expected to be able to debug its problems
+themselves). This document is to introduce the Robotics course project objectives
+highlighting the project’s regulations and draft milestones plan including a brief
+description for each milestone, the milestone weight and expected deadline.
+2German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Objectives:
+The robot which is of interest in this year’s project is Industrial Robotics (Several designs
+are present online as Open Source XML models). The objectives of the project are mainly
+to be able to model and analyze the robotic arm (obtain the kinematics, trajectory and
+control the arm to perform the desirable industrial motion) using ROS2 and Python to be
+used in Industrial Robotics Applications. In addition, build a simulation environment of
+the visualization of the limb’s motion through MuJoCo. Furthermore, build a GUI of the
+selected robotic arm in an industrial application environment performing the desirable
+movements.
+3German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Project Regulations:
+• The project team consists of 4-6 members cross tutorials.
+• Each team is required to simulate and analyze a robotic arm (4-7 DoF) to
+perform an industrial robotics application which should be chosen based on
+literature review.
+• Each team will work on a single robotic arm to simulate its motion in the GUI
+and for the industrial robotic application chosen.
+• Students that are not assigned to teams are going to be randomly clustered and
+get assigned to a random project.
+• Registration of less than 4 members or more than 6 members will NOT be
+considered and the project selection will be canceled.
+• Once the team is formed, NEITHER changes in the team’s members NOR in the
+assigned project will be acceptable.
+• The evaluation process of each milestone will follow the following procedures
+based on the milestone requirements:
+o Online Submissions: Each team will be requested to submit the
+requirements of the milestone through GitHub. These requirements may
+include: reports, narrated presentations, codes, videos and others. Each
+team will have a repository on GitHub to share folders with team
+members and course instructors.
+o Evaluations: Two evaluations will be conducted throughout the project,
+the evaluations timings are presented below. Evaluation method will be
+announced soon.
+4German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Project Milestones Overview:
+● The project weight is 30%.
+● The project is divided into 5 milestones covering all the course content.
+● Each milestone is weighted based on the complexity of the requirements.
+● All milestones will include a simulation platform for coding. The simulation
+platforms required for the course are MuJoCo utilizing ROS2 and Python (you
+are free to choose whatever simulator you like, but you will have to ensure it
+work)
+● Visualization of the robot’s motion is required
+● You will be asked to search for available models for a robotic arm. The course
+team will choose 2-3 robots for each team to select one and start simulating the
+robot’s motion and building the GUI.
+● Each team will construct a suitable full simulation environment based on the
+selected industrial application, ex.: robot assembling Legos, the robot and a
+worker are moving objects in an industrial sector which should be shown through
+a simulator of your choice (the course team should approve using this simulator).
+5German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Project Milestones Requirements:
+Milestone Expected
+Deliverables %
+# Deadline
+Requirements:
+• Project registration: each team required to
+register through a Google form:
+https://docs.google.com/forms/d/e/1FAIpQLSd3 Friday
+Registration azhk2VRIligOnh2P6hSKF6fP_kPhRG5vTkl7cOomQ 3rd of October, 0%
+TAb3w/viewform?usp=dialog 2025
+• The team members are required to fill their
+names, IDs, the priorities, a contact person’s email
+to contact in case of any problems
+Requirements:
+• State the selected application and propose a
+draft project flow to serve your selected
+industrial robotic application.
+• Search for available models having 4-7 degrees
+of freedom (number of motors).
+• Download ROS2 and MuJoCo (you can choose a
+simulator other than MuJoCo). Documentation
+is on the CMS.
+• If you would like to use another simulator,
+Wednesday
+Milestone
+mention the simulator and provide us with a 8th of October,
+01 5%
+video you have done previously with it. 2025
+• Each team member should have an account on
+GitHub and create one repository for each team
+(documentation will be available on CMS).
+To be submitted:
+● Github Repository Link containing a folder
+named “Milestone 01” including all the
+following:
+- One/Two page literature review.
+- Robotic manipulator CAD models.
+- Video of the software (ROS2, simulator).
+6German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Requirements:
+• Assign the frames on the robotic arm (on paper
+or by the help of the frames present in the
+simulator used).
+• Develop the DH convention of the robot.
+• Obtain the robotic arm Forward and Inverse
+Position Kinematics using Python.
+• Place the model in MuJoCo or the chosen
+simulator through the linking between ROS2 and
+the simulator by integrating it with Python. Links
+will be provided.
+• Analyze and visualize the motion of the limb by
+actuating the joints using constants, signal
+builders and sliders as inputs to the simulation
+environment
+• Start building the GUI of the environment Wednesday
+22th of
+Milestone To be submitted:
+02 October, 2025 7%
+• Create another folder in the previously created
+GitHub repository named “Milestone 02”
+including the following:
+– A Report (Word or Latex format) having the
+performed DH convention, forward
+kinematics
+– Codes of the forward kinematics analysis and
+the visualization of the robot’s motion.
+– Video for the simulations performed on the
+simulator including the building process of the
+environment’s GUI.
+7German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Requirements:
+• Derive the Forward and Inverse Velocity
+Kinematics of the robotic arm using Python.
+• Derive the Forward and Inverse Acceleration
+Kinematics of the robotic arm on Python.
+• Test the equations of the Forward and Inverse
+Position and Velocity Kinematics obtained on
+the chosen simulator by inputting joint
+angles/angular velocities/angular accelerations
+and sensing the position/velocities/accelerations
+of the end effector and the inverse process to be
+the same as that obtained by the kinematic
+equations with simple tolerance.
+• Continue building the GUI process which
+Wednesday
+includes all the environment components;
+12th
+chairs, conveyors, people, tools, etc.
+of November,
+To be submitted: 7%
+2025
+• Create another folder in the previously created +
+GitHub repository named “Milestone 03” Evaluation
+Milestone
+including the following:
+03
+– Video of the kinematics validation in a
+simulation commenting on the results.
+– Report having the steps of the performed
+analysis of the velocity kinematics and
+acceleration kinematics
+– Codes of the forward and inverse velocity
+kinematics and the robot’s motion
+visualization
+– Videos for the created GUI.
+– Videos for testing the kinematics equations
+obtained on the model by inputting joint
+angles and sensing the end effector’s position
+to be the same as that obtained by the
+kinematic equations with simple tolerance.
+8German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Requirements:
+• Derive Task-Space trajectories for the arm’s end
+effector to follow using Python.
+• Derive Joint-Space trajectory for the robot’s
+joints to follow using Python.
+• Validate the simulated Task-Space trajectories
+for the arm’s end effector to follow on ROS2 and
+the simulator
+• Validate the simulated Joint-Space trajectories
+for the robot’s joints to follow on ROS2 and the
+simulator
+Milestone • Send the joint angles required to perform the Wednesday
+04 26th 6%
+task-space trajectory and the joint-space
+of November,
+trajectory to the simulator to perform the
+2025
+desirable motion in the created GUI.
+To be submitted:
+• Create another folder in the previously created
+GitHub repository named “Milestone 04”
+including the following:
+– Videos of the trajectory validation in a
+simulation commenting on the results.
+– Codes of the and trajectory tracking analysis
+using joint-space and task-space and the
+visualization of the robot’s motion
+Requirements:
+• Derive position control algorithms for the motor
+level control
+• Test the closed loop system taking into
+consideration the robot’s visualization tool Wednesday
+• Perform the desired industrial application. 10th of
+Milestone To be submitted: December,
+05 2025 5%
+• Create another folder in the previously created
++
+GitHub repository named “Milestone 05”
+Final Evaluation
+including the following:
+– Narrated presentation having ALL the steps
+conducted in the project
+– Report having ALL steps performed with
+screenshots and analysis.
+9German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+– Codes of the control equations of the arm and
+the visualization
+– Videos for the fully functioning simulation
+10German University in Cairo (GUC)
+Faculty of Engineering & Materials Science (EMS)
+Mechatronics Department (MCTR)
+MCTR911-Robotics Programming Winter 2025
+Project Description
+Project Remarks and Resources:
+** Registration is open starting from Thursday 29th of September, 2025 till Friday 3rd of
+October, 2025. Link of the registration process can be found below:
+https://docs.google.com/forms/d/e/1FAIpQLSd3azhk2VRIligOnh2P6hSKF6fP_kPhRG5vTkl7cOom
+QTAb3w/viewform?usp=dialog
+** Each team will Search for a model of a robotic manipulator having 4-7 degrees of freedom.
+** A literature review on the most recent Industrial Robotic Applications will be conducted
+by each team to propose an application for his arm.
+** A detailed description for each milestone will be provided with all the required deliverables
+and the submission details (links for submissions will be provided in each announcement).
+** Teams will visualize the motion of the robot using MuJoCo or others (if approved).
+** Full analysis of the robot using ROS2 and Python.
+** Evaluations will take place within the semester for monitoring the progress of each team
+and for grading purposes.
+Best Wishes and Happy Semester,
+Robotics Programming Team ☺
+11

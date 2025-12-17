@@ -7,6 +7,18 @@
 
 ---
 
+## PDF Requirements Summary
+
+**MS1 (5%):** Video of software (ROS2, simulator)
+**MS2 (7%):** Videos for simulations + GUI building process  
+**MS3 (7%):** Kinematics validation videos + Testing videos + GUI videos
+**MS4 (6%):** Videos of trajectory validation in simulation
+**MS5 (5%):** Narrated presentation + Videos of fully functioning simulation
+
+**Total Videos Required:** 5 milestone-specific demonstration videos
+
+---
+
 # Milestone 1: Project Setup & Literature Review
 
 ## Video Script - MS1 (Duration: 3-4 minutes)
